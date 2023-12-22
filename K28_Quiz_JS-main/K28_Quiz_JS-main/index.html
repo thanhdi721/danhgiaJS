@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      th,
+      td {
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>Quan ly sinh vien</h1>
+      <div>
+        <form action="" id="form-control-student">
+          <label for="">Mã Sinh Viên:</label>
+          <input type="text" id="student-id" />
+          <br />
+          <label for="">Tên Sinh Viên:</label>
+          <input type="text" id="name" />
+          <br />
+          <label for="">Email Sinh Viên:</label>
+          <input type="text" id="email" />
+          <br />
+          <label for="">Điểm Toán:</label>
+          <input type="text" id="math" />
+          <br />
+          <label for="">Điểm Lý:</label>
+          <input type="text" id="physic" />
+          <br />
+          <label for="">Điểm Hóa:</label>
+          <input type="text" id="chemical" />
+          <br />
+          <button onclick="addNewStudent()">Thêm Sinh Viên</button>
+          <button onclick="resetStudents()">Xóa tất cả sinh viên</button>
+        </form>
+
+        <table style="width: 600px; border-collapse: collapse" border="1">
+          <thead>
+            <th>Mã Sinh Viên</th>
+            <th>Tên</th>
+            <th>Email</th>
+            <th>Điểm Trung Bình</th>
+            <th>Thao tác</th>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./js/model/model.js"></script>
+    <script src="./js/controller/controller.js"></script>
+    <script src="./js/main.js"></script>
+    <script></script>
+  </body>
+</html>
